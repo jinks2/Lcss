@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+     div{
+     	margin-top: 50px;
+     	text-align: center;
+     }
+
+
+     /*input[type="radio"] + label {
+         color:#f2f2f2;
+         font-family:Arial, sans-serif;
+         font-size:14px;
+     }*/
+ /*    input[type="radio"] {
+         display:none;
+     }
+     input[type="radio"] + label span {
+         display:inline-block;
+         width:19px;
+         height:19px;
+         margin:-1px 4px 0 0;
+         vertical-align:middle;
+         background:url(../img/check_radio.png) -38px top no-repeat;
+         cursor:pointer;
+     }
+
+     input[type="radio"]:checked + label span {
+         background:url(../img/check_radio.png) -57px top no-repeat;
+     }*/
+     input[type="radio"] {
+     	display: none;
+     }
+     input[type="radio"] + label span{
+     	background-color: red;
+     	display: inline-block;
+     	width: 19px;
+     	height: 19px;
+     	margin: -1px 4px 0px 0px;
+     	vertical-align:middle;
+     	background:url(../img/check_radio.png) -38px top no-repeat;
+     	cursor:pointer;
+     }
+     input[type="radio"]:checked + label span{
+     	background:url(../img/check_radio.png) -57px top no-repeat;
+     }
+	</style>
+</head>
+<body>
+<div>
+<input type="radio" id="r1" name="rr" />
+<label for="r1"><span></span>Radio Button 1</label>
+<p>
+<input type="radio" id="r2" name="rr" />
+<label for="r2"><span></span>Radio Button 2</label>
+</div>
+	
+</body>
+</html>

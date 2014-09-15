@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#transparent{
+		margin-top:50px; 
+	}
+	span{
+		border: 8px solid #fff;
+		margin:10px;
+	}
+	#transparent .span1{
+		border-color:   pink;
+	}
+	#transparent .span2{
+		border-color:   pink transparent;
+		/*border-color:   pink transparent pink transparent;*/
+	}
+	#transparent .span3{
+		border-color:   pink transparent transparent;
+		/*border-color:   pink transparent transparent transparent;*/
+	}
+	#transparent .span4{
+		border-color:  transparent pink; 
+		/*border-color:  transparent pink transparent pink; */
+	}
+	#transparent .span4{
+		border-color:  transparent pink transparent; 
+		/*border-color:  transparent pink transparent pink; */
+	}
+	#transparent .span5{
+		border-color:  transparent pink transparent transparent; 
+	}
+	#transparent .span6{
+		border-color:  transparent transparent pink; 
+		/*border-color:  transparent transparent pink transparent; */
+	}
+	#transparent .span7{
+		border-color:  transparent transparent transparent pink ; 
+	}
+	</style>
+</head>
+<body>
+	<div id="transparent">
+		<span class="span1">1</span>
+		<span class="span1"></span>
+		<span class="span2">2</span>
+		<span class="span2"></span>
+		<span class="span3">3</span>
+		<span class="span3"></span>
+		<span class="span4">4</span>
+		<span class="span4"></span>
+		<span class="span5">5</span>
+		<span class="span5"></span>
+		<span class="span6">6</span>
+		<span class="span6"></span>
+		<span class="span7">7</span>
+		<span class="span7"></span>
+	</div>
+</body>
+</html>

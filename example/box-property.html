@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>css example</title>
+	
+	<style type="text/css" media="screen">
+		h1{
+			text-align:center;
+			margin-top:20px;
+			margin-bottom:20px;
+		}
+	</style>
+
+
+</head>
+<body>
+     <h1>正常的浮动布局</h1>
+	<div class='wrapper1'>
+		<div id='header1'>header</div>
+		<div class='sidebar1'>sidebar</div>	
+		<div class='content1'>content</div>
+		<div id='footer1'>footer</div>
+	</div>
+   <style type="text/css" media="screen">
+ 	  *{
+ 		margin: 0;
+ 		padding: 0;
+ 	   }
+ 	  .wrapper1{
+       width:960px;
+       margin-left:auto;
+       margin-right:auto;
+       text-align:center;
+       font-size:30px;
+       color:red;
+ 	  }           /*Center-aligning has no effect if the width is 100%.*/
+ 	  #header1{
+ 	  	height:100px;
+ 	  	background:#38382e;
+ 	  	margin-bottom:10px;
+ 	  }
+ 	  .sidebar1{
+ 	  	float:left; /*floar设置的div1区域会影响它周围div2的内容区域,从而影响div2的整体区域*/
+ 	  	width:220px;
+ 	  	margin-right:20px;
+ 	  	margin-bottom:10px;
+ 	  	height:300px;
+ 	  	background:#5d33cf;
+ 	  }
+ 	  .content1{
+ 	  	float:left;
+ 	  	width:720px;
+ 	  	height:300px;
+ 	  	background:#c8ca30;
+ 	  	margin-bottom:10px;
+ 	  }
+ 	  #footer1{
+ 	  	background:#cc4ad5;
+ 	  	height:100px;
+ 	  	clear:both;
+ 	  }
+    </style>
+ 
+  <h1>对浮动框添加padding</h1>	
+   <div class='wrapper2'>
+   	<div id='header2'>header</div>
+   	<div class='sidebar2'>sidebar</div>	
+   	<div class='content2'>content</div>
+   	<div id='footer2'>footer</div>
+   </div>
+     <style type="text/css" media="screen">
+   	  *{
+   		margin: 0;
+   		padding: 0;
+   	   }
+   	 .wrapper2{
+   	 	width:960px;
+   	 	margin-left:auto;
+   	 	margin-right:auto;
+   	 	color:red;
+   	 	font-size:30px;  
+   	 	text-align:center;
+   	 	background:#ccc;
+   	  }
+   	  #header2{
+   	  	height:100px;
+   	  	background:#38382e;
+   	  	margin-bottom:10px;
+   	  	padding:10px;
+   	  	width:100%; /*没加之前宽度不受padding变化影响*/
+   	  }
+   	  .sidebar2{
+   	  	float:left;
+   	  	width:220px;
+   	  	height:300px;
+   	  	background:#5d33cf;
+   	  	margin-right:20px;
+   	  	margin-bottom:10px;
+   	  	padding:10px;
+   	  }
+   	  .content2{
+   	  	float:left;
+   	  	width:720px;
+   	  	height:300px;
+   	  	background:#c8ca30;
+   	  	margin-bottom:10px;
+   	  	padding:10px;
+   	  }
+      #footer2{
+      	background:#cc4ad5;
+      	clear:both;
+      	height:100px;
+      	padding:10px;
+      	width:100%;
+      }
+
+      </style>
+
+</body>
+</html>

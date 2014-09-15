@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.clearfix{
+		clear: both;
+		overflow: hidden;/*li use float, them use this*/
+	}
+	.demo{
+		width: 250px;
+		border: 1px solid #ccc;
+		padding: 10px;
+		margin: 20px auto;
+	}
+	li{
+		list-style: none;
+		float: left;
+		height: 20px;
+		line-height: 20px;
+		width: 20px;
+		border-radius: 10px;
+		background-color: red; /*not work*/
+		color: white;
+		text-align: center;
+		margin-right: 5px;
+	}
+	.demo *{
+		background-color: orange;
+	}
+	ul{
+		background-color: grey;
+	}
+	#first{
+		background-color: lime;
+		color:#000;
+	}
+	#last{
+		background-color: #000;
+		color: lime;
+	}
+	.item{
+		background-color: green;
+		color:#fff;
+		font-weight: bold;
+	}
+	.item.important{
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+	<ul class="clearfix demo">
+		<li class="first" id="first">1</li>
+		<li class="active">2</li>
+		<li class="important item">3</li>
+		<li class="important">4</li>
+		<li class="item">5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li id="last">10</li>
+	</ul>
+</body>
+</html>

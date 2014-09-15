@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0px;
+		padding: 0px;
+	}
+	body{
+		width: 300px;
+		margin:0 auto;
+	}
+	div{
+		margin: 5px;
+		padding: 5px;
+		border:1px solid #ccc;
+	}
+	div div {
+		background-color: orange;
+	}
+	body>div{
+		background-color: green;
+	}
+	.active+div{  /*must next and closet*/
+		background-color: lime;
+	}
+	.new~div{
+		background-color: red; /*css3:next*/
+	}
+	</style>
+</head>
+<body>
+	<div class="active">1</div>
+	<p>insert</p>
+	<div class="active">2</div><!--here ".active+div" not work-->
+	<div class="new">3</div>
+	<div>4
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div>7
+		<div>8
+			<div>9
+				<div>10</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
