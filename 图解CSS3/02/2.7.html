@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.demo{
+		width: 300px;
+		border:1px solid #ccc;
+		padding: 10px;
+		overflow: hidden;
+		margin:20px auto;
+	}
+	.demo a{
+		display: inline-block;
+		/*
+		display: block;
+		float:left;
+		margin-right: 5px;
+		*/
+
+		height: 50px;
+		width: 50px;
+		background-color: #aac;
+		text-align: center;
+		color:blue;
+		border-radius: 10px; 
+		font:bold 20px/50px Arial;
+		text-decoration: none;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+	/**/
+	.demo a[id][title]{
+		background-color: yellow;
+	}
+	.demo a[title][class=link]{
+		background-color: pink;
+	}
+	.demo a[class="link item"]{
+		background-color: red;
+	}
+	.demo a[class|=new]{
+		background-color: green;
+	}
+	.demo a[title*=in]{
+		background-color: #ddd;
+	}
+	.demo a[title~=web]{
+		background-color: #625;
+	}
+	.demo a[id^=do]{
+		background-color: grey;
+	}
+	.demo a[id$=dos]{
+		background-color: orange;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="demo">
+		<a href="" target="_blank" id="first" title="test">1</a>
+		<a href="" target="_blank" title="test" class="item">2</a>
+		<a href="" target="_blank" title="test" class="link">3</a>
+		<a href="" target="_blank" class="link item">4</a>
+		<a href="" target="_blank" class="link">5</a>
+		<a href="" target="_blank" class="new">6</a>
+		<a href="" target="_blank" class="newone">7</a>
+		<a href="" target="_blank" class="new-one">8</a>
+		<a href="" target="_blank" title="in">9</a>
+		<a href="" target="_blank" id="first">10</a>
+		<a href="" target="_blank" title="link">11</a>
+		<a href="" target="_blank" title="website">12</a>
+		<a href="" target="_blank" title="web">13</a>
+		<a href="" target="_blank" title="web item">14</a>
+		<a href="" target="_blank" id="docss">15</a>
+		<a href="" target="_blank" id="bestdo">16</a>
+		<a href="" target="_blank" id="do">17</a>
+		<a href="" target="_blank" id="dos">18</a>
+		<a href="" target="_blank" id="newdos">19</a>
+		<a href="" target="_blank" >20</a>
+	</div>
+</body>
+</html>

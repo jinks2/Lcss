@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*w3c box; box-sizing:content-box
+		if add padding or border,the layout will break
+	*/
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		.wrapper{
+			width: 960px;
+			margin:0 auto;
+	
+			font-size: 30px;
+			text-align: center;
+		}
+		#header{
+			height: 100px;
+			background-color: #38382e;
+			margin-bottom: 10px;
+		}
+		.siderbar{
+			float: left;
+			width: 220px;
+			background: #5d33cf;
+			height: 300px;
+			margin-right: 20px;
+			margin-bottom: 30px;
+		}
+		.content{
+			float: left;
+			background-color: #c8ca30;
+			width: 720px;
+			height: 300px;
+			margin-bottom: 10px;
+		}
+		#footer{
+			background-color: #cc4ad5;
+			clear: both;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="header">
+			header
+		</div>
+		<div class="siderbar">
+			sidebar
+		</div>
+		<div class="content">
+			content
+		</div>
+		<div id="footer">
+			footer
+		</div>
+	</div>
+</body>
+</html>

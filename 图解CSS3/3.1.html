@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		width: 50px;
+		height: 50px;
+		border:3px solid red;
+		margin:50px;
+	}
+	div#first{
+		border-width: 1px 0;/**/
+	}
+	div#secend{
+		border-style:solid dotted dashed double;
+	}
+	div#third{
+		border-width: 5px;
+		border-color: #ddd;
+		border-style: groove ridge inset outside;
+	}
+	#border-image{
+		border-image: url(img/border.png) 27 round stretch;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="first">1</div>
+	<div id="secend">2</div>
+	<div id="third">3</div>
+	<div id="border-image"></div>
+</body>
+</html>
