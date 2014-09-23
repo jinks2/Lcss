@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*float overflow content*/
+	div{
+		margin-bottom: 10px;
+		border:1px solid #ccc;
+	}
+	div img{
+		float: left;	
+	}
+
+
+	.one{
+		overflow: auto; /*use overflow*/
+	}
+	.two:after{  /*use :after*/
+		content:"";
+		display: block;
+		clear: both;
+	}
+	.three span{ /*add a block in the end*/
+		clear: both;
+		display: block;
+	}
+
+
+
+	/*set font: "em" is a scalable unit  that is used in web document media, if set percent of body will change it.
+	Generally, 1em = 12pt = 16px = 100% 
+
+  body{
+	font-size: 60%;
+  }
+  p{
+	font-size:2em; 
+  }
+	*/
+	</style>
+</head>
+<body>
+	
+	<div class="one">
+	<img src="../img/1.jpg" width="100" height="50">
+		Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most ...
+	</div>
+
+	<div class="two">
+	<img src="../img/1.jpg" width="100" height="50">
+		Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most ...
+	</div>
+
+	<div class="three">
+	<img src="../img/1.jpg" width="100" height="50">
+		Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most ...
+		<span></span>
+	</div>
+
+  <style>
+  /*word break*/
+		p.para{
+			border:1px solid #ccc;
+			width:150px;
+			padding: 12px;
+		}
+		p.para #break{
+			word-wrap:break-word;  /*if the word is too long with no space ,can use this to force to break*/
+		}
+  </style>
+		<p class="para">
+			Cascading Style <span id="break">Sheetssssssssssssssssssssssssssssssssssss       is a style sheet language used for describing the</span> look and formatting of a document written in a markup language. While most 
+		</p>
+
+
+
+<style>
+ /*text-overflow*/
+	p.text{
+		border:1px solid black;
+		width: 150px;
+		height: 100px;
+		padding: 12px;
+		/*one line and hidden*/
+		white-space: nowrap; 
+		overflow: hidden;		
+	}
+	p#one{
+		text-overflow: ellipsis;
+	}
+</style>
+<p class="text" id="one">The following two divs contains a long text that will not fit in the box. As you can see, the text is clipped.</p>
+
+
+<style>
+/*initcap image*/
+	p.initcap{
+		line-height: 1em;
+		background-image: url(initcap.gif);
+		background-repeat: no-repeat;
+		padding-top: 45px;/*height*/
+		text-indent: 35px;/*width*/
+	}
+	p #initcap{
+		display: none;
+	}
+</style>
+ <p class="initcap"><span id="initcap">0</span>The following two divs contains a long text that will not fit in the box. As you can see, the text is clipped.</p>
+</body>
+</html>
