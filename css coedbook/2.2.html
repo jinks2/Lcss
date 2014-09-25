@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+	/*border-image*/
+		#border{
+			width:300px;
+			padding: 20px;
+			border-image:url(../img/border.png)  5 10 5 10 /10px round;
+			/*url  slice/border  way*/
+		}
+ 
+
+	/*set background image fixed*/
+  body{
+  	/*should and background-image*/
+  	background-attachment: fixed;
+  }
+
+
+  /*set background-size*/
+  body{
+  	background-image: url(../img/2.jpg);
+  	background-size: 20% auto;/**/
+  	background-repeat: no-repeat;
+  	background-position: center;
+  }
+
+
+  /*expand image across the entire place;
+  body{
+  	padding:0;
+  	margin:0;
+  }
+  #all{
+  	position: absolute;
+  	width:100%;
+  	height:100%;
+  	z-index: -999;
+  }
+*/
+
+
+/*rotate*/
+ #rotate:hover{
+ 	transform:rotate(20deg);
+ }
+
+
+
+ /*combine two different images formats into one presentation*/
+
+ #background{
+ 	width: 500px;
+ 	height: 500px;
+ 	background: url(../img/product4.png) 25% 80% no-repeat, 
+ 	            url(../img/product3.png) 25% 50% no-repeat;/*careful about the order*/
+ 	line-height: 500px;
+ }
+
+
+
+	</style>	
+</head>
+<body>
+	  <p id="border">Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most</p>
+    <img id="rotate" src="../img/1.jpg">
+    <div id="background">combine two different images formats into one presentation</div>
+    
+<style>
+	#box{
+	 display: inline-block;
+   box-shadow: 20px 5px 13px 10px rgba(123,213,124,0.5);
+   /*h-shadow v-shadow blur size color*/
+	}
+
+
+
+
+/*adjust the scrollball*/
+  body::-webkit-scrollbar-track  /*just for chrome, can check here find code for ie:http://codemug.com/html/custom-scrollbars-using-css/ */
+	{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+		border-radius: 10px;
+	}
+
+	body::-webkit-scrollbar
+	{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	body::-webkit-scrollbar-thumb
+	{
+		border-radius: 10px;
+		background-image: -webkit-gradient(linear,
+										   left bottom,
+										   left top,
+										   color-stop(0.44, rgb(122,153,217)),
+										   color-stop(0.72, rgb(73,125,189)),
+										   color-stop(0.86, rgb(28,58,148)));
+	}
+
+
+	div#scroll{
+		margin-top: 30px;
+		margin:0 auto;
+		width: 200px;
+		height: 150px;
+		overflow: scroll;
+	}
+	div#scroll::-webkit-scrollbar{
+		width: 10px;
+	}
+	div#scroll::-webkit-scrollbar-button{
+		background-color: red;
+	}
+	div#scroll::-webkit-scrollbar-track{
+		background-color: green;
+	}
+	div#scroll::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: yellow;
+	}
+</style>
+<div id="box">
+	box-shadow
+</div>
+
+<div id="scroll">
+	Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most
+</div>
+
+
+</body>
+</html>

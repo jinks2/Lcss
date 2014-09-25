@@ -42,7 +42,85 @@
 		Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most
 	</p>
 
+  <style>
+  /*column*/
+	 #column{
+	 	 column-count:3;
+	 	 -webkit-column-count:3;
+	 	 -moz-count:3;
 
-	
+	 	 column-gap:20px;
+	 	 -webkit-column-gap:20px;
+	 	 -moz-column-gap:20px;
+
+	 	 column-rule:1px dotted #ccc;
+	 	 -webkit-column-rule:1px dotted #ccc;
+	 	 -moz-column-rule:1px dotted #ccc;
+	 }
+
+
+
+/*change image*/
+img#greyscale:hover{
+   filter: grayscale(0.5);
+	-webkit-filter: grayscale(0.5);
+	-moz-filter: grayscale(0.5);
+	-o-filter: grayscale(0.5);
+	-ms-filter: grayscale(0.5);
+}
+
+img#blur:hover{
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+}
+
+img#opacity:hover{
+	filter: opacity(0.5);
+	-webkit-filter: opacity(0.5);
+	-moz-filter: opacity(0.5);
+	-o-filter: opacity(0.5);
+	-ms-filter: opacity(0.5);
+}/*other*/
+
+
+
+/*radius*/
+img#radius{
+	border-radius:0 10px 0 20px;
+	-webkit-border-radius:0 10px 0 20px;
+	-moz-border-radius:0 10px 0 20px;
+}
+img#topleft{
+	border-top-left-radius: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-top-left-radius: 20px;
+}
+img#bottomright{
+	border-bottom-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-bottom-right-radius: 20px;
+}
+
+  </style>	
+  <P id="column">Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While mostCascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most</P>
 </body>
+normal:
+<img src="../img/1.jpg">
+grayscale:
+<img id="greyscale" src="../img/1.jpg">
+blur:
+<img id="blur" src="../img/1.jpg">
+opacity:
+<img id="opacity" src="../img/1.jpg">
+<br/>
+radius:
+<img id="radius" src="../img/1.jpg">
+top-left:
+<img id="topleft" src="../img/1.jpg">
+bottom:right:
+<img id="bottomright" src="../img/1.jpg">
+
 </html>

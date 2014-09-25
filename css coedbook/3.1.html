@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+	div{
+		margin-top: 5px;
+	}
+	/*border-style*/
+   #double{
+   	border:10px double #ccc;
+   }
+   #groove{
+   	border:10px groove #ccc;
+   }
+   #inset{
+   	border:10px inset #ccc;
+   }
+	#outset{
+		border:10px outset #ccc;
+	}
+
+
+
+	/*marker in lister*/
+ ul#style{
+ 	list-style: none;
+ }
+ #style li:before{
+ 	content:"\2665";
+ }
+
+
+ /*definition list*/
+ 	#one dt{
+ 		font-weight: bold;
+    float: left;
+    clear: left;
+ 	}
+
+ 	#two dt{
+ 		font-weight: bold;
+ 		float: left;
+ 	}
+ 	#two dd{
+ 		float: left;
+ 		margin-right: 20px;
+ 	}
+
+
+
+ 	/*set number increment*/
+ 	body {
+ 	   counter-reset: item1;   
+ 	}
+ 	h1.num {
+ 	    counter-reset: item2;
+ 	    clear: both;
+ 	}
+ h1.num:before{
+	counter-increment: item1;
+    content:counter(item1) ". ";
+ }
+ ul.num li:before{
+ 	 counter-increment: item2;
+    content: counter(item1) "." counter(item2) " ";
+ }
+	</style>
+	<div id="double">double</div>
+	<div id="groove">groove</div>
+	<div id="inset">inset</div>
+	<div id="outset">outset</div>
+
+	<ul id="style">
+		<li>css cookbook</li>
+		<li>css cookbook</li>
+		<li>css cookbook</li>
+		<li>css cookbook</li>
+	</ul>
+
+	<dl id="one">
+		<dt>CSS</dt>
+		<dd>Cascading Style Sheet</dd>
+		<dt>HTML</dt>
+		<dd>HyperText Markup Language</dd>
+		<dd>How To Meet Ladies</dd>
+	</dl>
+	<dl id="two">
+		<dt>CSS</dt>
+		<dd>Cascading Style Sheet</dd>
+		<dt>HTML</dt>
+		<dd>HyperText Markup Language</dd>
+		<dd>How To Meet Ladies</dd>
+	</dl>
+
+<span></span>
+
+ <h1 class="num">num</h1>
+ 	<ul class="num">
+ 		<li>css cookbook</li>
+ 		<li>css cookbook</li>
+ 		<li>css cookbook</li>
+ 	</ul>
+
+ <h1 class="num">num</h1>
+ 	<ul class="num">
+ 		<li>css cookbook</li>
+ 		<li>css cookbook</li>
+ 		<li>css cookbook</li>
+ 	</ul>
+ 
+ <h1 class="num">num</h1>
+ 	<ul class="num">
+ 		<li>css cookbook</li>
+ 		<li>css cookbook</li>
+ 		<li>css cookbook</li>
+ 	</ul>
+ 
+</body>
+</html>
