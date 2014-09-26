@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+/*transition*/
+	#transition{
+		position: relative;
+		width: 100px;
+		height: 100px;
+		background-color:red;
+		transition: background-color .5s ease;
+		margin-bottom: 20px;
+	}
+	#transition:hover{
+    background-color: green;
+	}
+
+
+/*focus-background*/
+ input#background:focus{
+    background-color: #ccc;
+ }
+
+
+/*html5:search*/
+input[type="search"] { 
+	color: pink;  
+	cursor: pointer;
+	letter-spacing: 1px;        
+	word-spacing: 2px;  
+	border-radius: 5px;              
+}
+
+
+/*example1*/
+#example{
+	margin-top: 20px;
+}
+#example div{
+  margin-bottom: 10px;
+}
+#example label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+#example button{
+	margin-left: 110px;
+}
+
+
+
+/*example2*/
+#example2{
+	margin-top: 30px;
+}
+#example2 #left,#right{
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+#example2 label{
+	display: block;
+}
+</style>
+
+	<div id="transition"></div>
+  <label>Text:
+  <input type="text" id="background"/>
+  </label>
+
+  <label>Search:
+  <input type="search" results="5" placeholder="Search" name="s" autosave=some_unique_value>
+  </label>
+
+  <label for="website">Web site:</label>
+  <input type="text" id="website" value="http://">
+
+  <input type="image" src="../img/1.jpg" name="submit">
+
+<form id="example">
+  <div>
+   <label for="username">Username:</label>
+   <input type="text" id="username"/>
+  </div> 
+  <div>
+   <label for="password">Password:</label>
+   <input type="password" id="password"/>
+ </div>
+ <div>
+	 <label for="check">Remember you?</label>
+	 <input type="checkbox" id="check">
+ </div> 
+	 <button type="submit">Submit</button>
+</form>	 
+
+<form id="example2">
+ <div id="left">
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div> 
+	 <div>
+	  <label for="password">Password:</label>
+	  <input type="password" id="password"/>
+	</div>
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div> 
+	 <div>
+	  <label for="password">Password:</label>
+	  <input type="password" id="password"/>
+	</div>
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div>
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div> 
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div>  
+	</div>
+	<div id="right"> 
+	 <div>
+	  <label for="password">Password:</label>
+	  <input type="password" id="password"/>
+	</div>
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div> 
+	 <div>
+	  <label for="password">Password:</label>
+	  <input type="password" id="password"/>
+	</div>
+	 <div>
+	  <label for="username">Username:</label>
+	  <input type="text" id="username"/>
+	 </div> 
+	 <div>
+	  <label for="password">Password:</label>
+	  <input type="password" id="password"/>
+	</div>
+</div>
+</form>
+</body>
+</html>
