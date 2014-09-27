@@ -1,0 +1,24 @@
+#floattwo{
+	border:1px solid black;
+	overflow: auto;
+}
+#floattwo #header{
+	height: 80px;
+	line-height: 80px;
+	background-color: red;
+	color:#ddd;
+}
+#floattwo #left{
+	float: left;
+	width: 40%;
+	height: 200px;
+	overflow: hidden;
+	border:1px solid black;
+	margin:10px;
+	background-color: pink;
+}
+#floattwo #right{
+	background: lightblue;
+	border:1px solid black;
+	padding:5px;
+}

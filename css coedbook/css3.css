@@ -1,0 +1,18 @@
+    #floattwo{
+    	border:1px solid black;
+    }
+    #floattwo #header{
+			background-color: pink;
+			border:1px solid black;
+			height: 80px;
+			line-height: 80px;
+    }
+    #floattwo #left{
+    	background-color:yellow;
+    	border:1px solid black;
+    	margin-bottom: 10px;
+    }
+    #floattwo #right{
+    	background-color: lightblue;
+    	border:1px solid black;
+    }

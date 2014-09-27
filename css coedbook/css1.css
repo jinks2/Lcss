@@ -1,0 +1,24 @@
+#floattwo{
+ 	width: 100%;
+ 	margin:0 auto;
+ }
+ #floattwo #header{
+ 	background-color: #eee;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	margin-bottom: 0px;
+ 	padding-left: 10px;
+ 	border:1px solid black;
+ }
+ #floattwo #left{
+ 	float: left;
+ 	width: 60%;
+ 	background-color: #ccc;
+  border:1px solid black;
+ }
+ #floattwo #right{
+ 	display: inline-block;
+ 	width: 38%;
+ 	background-color: #ddd;
+ 	border:1px solid;
+ }
