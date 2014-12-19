@@ -1,1 +1,1 @@
-my repository to do the exercises of Learn JS. It's pretty meaningless to fork this repository；
+my repository to do the exercises of Learn JS. It's pretty meaningless to fork this repository。
